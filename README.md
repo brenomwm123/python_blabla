@@ -1,2 +1,2 @@
-# python_blabla
-repositorio estudo
+# Aprendendo python
+Aprendendo GIT e GITHUB
