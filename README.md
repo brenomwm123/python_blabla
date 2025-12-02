@@ -1,2 +1,2 @@
 # Aprendendo python
-Aprendendo GIT e GITHUB
+Aprendendo python acompanhando o CURSO EM VIDEO
