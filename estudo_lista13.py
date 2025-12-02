@@ -1,0 +1,9 @@
+lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+
+lista_impar = []
+
+for num in lista:
+    if num % 2 != 0:
+        lista_impar.append(num)
+        
+print(f'Numeros impares: {lista_impar}')
