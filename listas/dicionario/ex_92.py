@@ -9,7 +9,11 @@ ano_atual = datetime.now().year
 pessoa = {}
 pessoa['nome'] = str(input('Nome: '))
 pessoa['nascimento'] = int(input('Ano de nascimento: '))
-pessoa['c_trabalho'] = str(input('Numero da carteira de trabalho, 0 caso nao tenha: '))
 pessoa['idade'] = ano_atual - pessoa['nascimento']
 
-print(pessoa['idade'])
+pessoa['c_trabalho'] = int(input('Numero da carteira de trabalho (0 caso nao tenha): '))
+if pessoa['c_trabalho'] != 0:
+    pessoa['ano_contratacao'] = int(input('Ano de contratação: '))
+    pessoa['salario'] = float(input('Salario: '))
+    pessoa['aposentadoria'] = pessoa['ano_contratacao'] - pessoa['nascimento'] + 35
+    print(f'Vai se aposentar daqui {pessoa["aposentadoria"]} anos')
