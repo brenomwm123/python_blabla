@@ -5,15 +5,22 @@
 
 jogador = {}
 jogador['nome'] = str(input('Nome: '))
-jogador['num_partidas'] = int(input('Numero de partidas: '))
+jogador['partidas'] = int(input('Numero de partidas: '))
 jogador['gols'] = []
 
 
-for i in range(jogador['num_partidas']):
-    gols = input((f'Quantos gols {jogador["nome"]} fez na partida {i+1}: '))
+for i in range(jogador['partidas']):
+    gols = int(input(f'Quantos gols {jogador["nome"]} fez na partida {i+1}: '))
     jogador['gols'].append(gols)
 
-gols_tot = sum(gols)
+gols_tot = sum(jogador['gols'])
 
-print(jogador)
-print(gols_tot)
+print(f'O jogador {jogador["nome"]} jogou {jogador["partidas"]} partidas')
+
+print('-='*20)
+
+for i in range(jogador['partidas']):
+    print(f'Na partida {i+1}, {jogador["nome"]} marcou {jogador["gols"][i]} gols.')
+print('-='*20)
+
+print(f'Total de gols: {gols_tot}')
