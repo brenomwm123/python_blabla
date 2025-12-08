@@ -7,9 +7,7 @@
 # D) Uma lista de pessoas com idade acima da média
 
 pessoas = []
-n_pessoas = 0
-
-
+soma = media = 0
 while True:
     pessoa = {}
     pessoa['nome'] = str(input('Nome: '))
@@ -23,8 +21,8 @@ while True:
             print('errado.')
                 
     pessoa['idade'] = int(input('Idade: '))
+    soma += pessoa['idade']
     
-    n_pessoas += 1
     pessoas.append(pessoa)
     
     #valida sim uo nao
@@ -35,6 +33,7 @@ while True:
         print('ERRO! responda apenas S ou N')
     if resp == 'N': 
         break
-        
-print(f'Foram cadastradas {n_pessoas} pessoas.')
-
+print('-='*20)       
+print(f'Foram cadastradas {len(pessoas)} pessoas.')
+print(pessoas)
+print(f'A media da idade das pessoas foi de {soma / len(pessoas)} anos.')
