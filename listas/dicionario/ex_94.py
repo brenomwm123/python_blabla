@@ -6,29 +6,35 @@
 # C) Uma lista com as mulheres
 # D) Uma lista de pessoas com idade acima da média
 
-
 pessoas = []
 n_pessoas = 0
-iade_media = 0
+
 
 while True:
     pessoa = {}
     pessoa['nome'] = str(input('Nome: '))
     
+    #valida sexo
     while True:
         pessoa['sexo'] = str(input('Sexo F/M : ')).upper().strip()
         if pessoa['sexo'] in ['F', 'M']:
             break
         else:
             print('errado.')
-            
+                
     pessoa['idade'] = int(input('Idade: '))
+    
     n_pessoas += 1
     pessoas.append(pessoa)
-    resp = input('Deseja inserir outra pessoa ? S/N :')
-    if resp in 'Nn':
+    
+    #valida sim uo nao
+    while True:
+        resp = input('Deseja inserir outra pessoa ? S/N :').upper().strip()
+        if resp in 'SN':
+            break
+        print('ERRO! responda apenas S ou N')
+    if resp == 'N': 
         break
+        
+print(f'Foram cadastradas {n_pessoas} pessoas.')
 
-    print(f'Foram cadastradas {n_pessoas} pessoas.')
-
-    #for k, v in 
