@@ -22,11 +22,8 @@ while True:
         break
 
 print('-='*25)
-print()
 print(f'{"cod":<4}{"nome":<15}{"gols":<20}{"total":>5}')
-
 print('-' * 50)
-
 for i, j in enumerate(jogadores):
     print(f'{i:<4}{j["nome"]:<15}{str(j["gols"]):<20}{sum(j["gols"]):>5}')
 # print(f'O jogador {jogador["nome"]} jogou {jogador["partidas"]} partidas')
