@@ -7,11 +7,13 @@ from datetime import datetime
 def voto(ano=0):
     dif_ano = ano_atual - ano
     if dif_ano < 16:
-        return 'VOTO NEGADO'
+        return 'VOTO NEGADO, mto novo'
     elif dif_ano < 18:
-        return 'VOTO OPCIONAL'
+        return 'VOTO OPCIONAL, ta quase'
+    elif dif_ano > 70:
+        return 'VOTO OPCIONAL, mto veio'
     else:
-        return 'VOTO OBRIGATÓRIO'
+        return 'VOTO OBRIGATORIO hahaha'
     
 
 ano_atual = datetime.now().year
