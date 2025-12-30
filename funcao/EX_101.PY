@@ -1,11 +1,20 @@
-def fatorial(num = 1):
-    f = 1
-    for c in range(num, 0, -1):
-        f *= c
-    return f
+##Exercício Python 101: Crie um programa que tenha uma função chamada voto()
+# que vai receber como parâmetro o ano de nascimento de uma pessoa,
+# retornando um valor literal indicando se uma pessoa tem voto NEGADO, OPCIONAL e OBRIGATÓRIO nas eleições.
 
-n = int(input('Digita num: '))
+from datetime import datetime
 
-print(f'O fatorial de {n} é {fatorial(n)}')
-  
+def voto(ano=0):
+    dif_ano = ano_atual - ano
+    if dif_ano < 16:
+        return 'VOTO NEGADO'
+    elif dif_ano < 18:
+        return 'VOTO OPCIONAL'
+    else:
+        return 'VOTO OBRIGATÓRIO'
+    
 
+ano_atual = datetime.now().year
+ano_nasc = int(input('Informe seu ano de nascimento: '))
+
+print(voto(ano_nasc))
