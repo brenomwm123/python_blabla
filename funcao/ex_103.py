@@ -5,11 +5,21 @@
 # mesmo que algum dado não tenha sido informado corretamente.
 
 def ficha(nome=False, gols=0):
-    print(f'O jogador {nome} fez {gols} gols')
-    
-    
+    print()
+    if nome:
+        print(f'O jogador {nome} fez {gols} gols')
+    else:
+        print(f'O jogador <desconhecido> fez {gols} gols')
+    print()
     
     
 #Programa principal
+nome = input('Nome do jogador: ')
+gols = input('Quantos gols: ')
 
-print(ficha('breno', 10))
+if gols.isnumeric():
+    gols = int(gols)
+else:
+    gols = 0
+
+ficha(nome, gols)
