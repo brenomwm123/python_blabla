@@ -4,9 +4,10 @@
 
 def notas(*n, sit=False):
     r = {}
-    r['total'] = len(n)
     if len(n) == 0:
-        return{}
+        return{}    
+    
+    r['total'] = len(n)
     r['maior'] = max(n)
     r['menor'] = min(n)
     r['media'] = round(sum(n)/len(n), 2)
