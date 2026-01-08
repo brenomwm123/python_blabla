@@ -8,9 +8,9 @@ def linha():
 preco = float(input('Informe o preço: '))
 
 linha()
-print(f'O dobro do preço é {moeda.dobro(preco):.2f}')
+print(f'O dobro de R${preco} é {moeda.dobro(preco):.2f}')
 linha()
-print(f'Metade do preço é {moeda.metade(preco):.2f}')
+print(f'Metade do R${preco} é {moeda.metade(preco):.2f}')
 linha()
 print(f'Aumento de 15%: {moeda.aumentar(preco):.2f}')
 linha()
