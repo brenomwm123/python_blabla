@@ -50,7 +50,7 @@ for p in pessoas:
         print(f'{p["nome"]} ', end='')
 print()
 print('-='*20)
-print('Pessoas mais velhas que a media:: ', end='')
+print('Pessoas mais velhas que a media: ', end='')
 for p in pessoas:
-    if p['idade'] > media:
-        print(f'{p["nome"]}', end ='')
+    if p['idade'] >= media:
+        print(f'{p["nome"]} ', end ='')

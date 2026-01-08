@@ -6,7 +6,7 @@
 
 def ficha(nome=False, gols=0):
     print()
-    if nome:
+    if nome.strip():
         print(f'O jogador {nome} fez {gols} gols')
     else:
         print(f'O jogador <desconhecido> fez {gols} gols')

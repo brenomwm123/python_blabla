@@ -1,1 +1,2 @@
-help(print)
+def contador(i, f, p):
+    pass

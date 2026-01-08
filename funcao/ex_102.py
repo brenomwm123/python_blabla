@@ -14,7 +14,6 @@ def fatorial(num, show=False):
         f *= c
     return f
         
-    
-
+        
 #programa principal
 print(fatorial(4, show = True))

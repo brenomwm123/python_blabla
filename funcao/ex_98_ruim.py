@@ -22,7 +22,9 @@ def contador_1():
  
 #def contador_2(i, f, p):
     
-       
+
+
+#Codigo principal          
 contador_1()
 
 print('Chegou sua vez.')
@@ -30,7 +32,7 @@ linha()
 inicio = int(input('Início: '))
 fim = int(input('Fim: '))
 passo = int(input('Passo: '))
-    
+
         
 
 

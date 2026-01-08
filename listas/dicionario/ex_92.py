@@ -19,3 +19,5 @@ else:
         pessoa['salario'] = float(input('Salario: '))
         pessoa['aposentadoria'] = pessoa['ano_contratacao'] - pessoa['nascimento'] + 35
         print(f'Vai se aposentar com {pessoa["aposentadoria"]} anos')
+        
+        
