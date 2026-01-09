@@ -14,3 +14,5 @@ def metade(valor):
     m = valor / 2
     return m
 
+def moeda(preco=0, moeda='R$'):
+    return f'{moeda}{preco}'.replace('.',',')
