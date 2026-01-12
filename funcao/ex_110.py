@@ -1,4 +1,4 @@
-import moeda2
+from moeda2 import amostrar
 
 def linha():
     print('-='*15)
@@ -7,4 +7,4 @@ def linha():
 
 preco = float(input('Informe o preço: '))
 
-moeda2.amostrar(preco, 20, 10)
+moeda2.amostrar(preco, 90, 5)

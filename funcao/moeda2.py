@@ -26,10 +26,11 @@ def amostrar(preco=0, aumento=10, desconto=5):
     print('RESUMO DO VALOR'.center(30))
     print('-'*30)
     
-    print(f'Preço analisado: {moeda(preco)}')
-    print(f'Dobro do preço: {moeda(dobro(preco))}')
-    print(f'Metade do preço: {moeda(metade(preco))}')
-    print(f'{aumento}% de aumento: {moeda(preco + (preco * porcentagem_aumento))}')
-    print(f'{desconto}% de desconto: {moeda(preco - (preco * porcentagem_desconto))}')
+    print(f'{"Preço analisado:":<20} {moeda(preco):<8}')
+    print(f'{"Dobro do preço:":<20} {moeda(dobro(preco)):<8}')
+    print(f'{"Metade do preço:":<20} {moeda(metade(preco)):<8}')
+    print(f'{f"{aumento}% de aumento:":<20} {moeda(preco + (preco * porcentagem_aumento)):<8}')
+    print(f'{f"{desconto}% de desconto:":<20} {moeda(preco - (preco * porcentagem_desconto)):<8}')
+    print('-'*30)
     
     
