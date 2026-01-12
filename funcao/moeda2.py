@@ -17,3 +17,10 @@ def metade(valor,formato=False):
 
 def moeda(preco=0, moeda='R$'):
     return f'{moeda}{preco:.2f}'.replace('.',',')
+
+def amostrar(preco=0, aumento=10, desconto=5):
+    print('-'*30)
+    print('RESUMO DO VALOR'.center(30))
+    print('-'*30)
+    print(f'Preço analisado: {moeda(preco)}')
+    
