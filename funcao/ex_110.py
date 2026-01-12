@@ -7,4 +7,4 @@ def linha():
 
 preco = float(input('Informe o preço: '))
 
-moeda2.amostrar(preco)
+moeda2.amostrar(preco, 20, 10)
