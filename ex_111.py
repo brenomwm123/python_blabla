@@ -1,4 +1,4 @@
-import moeda2
+from utilidadesCeV import moeda
 
 def linha():
     print('-='*15)
@@ -6,5 +6,5 @@ def linha():
 #Programa principal
 
 preco = float(input('Informe o preço: '))
-
-moeda2.amostrar(preco, 90, 5)
+Print('Olá')
+moeda.amostrar(preco, 90, 5)
