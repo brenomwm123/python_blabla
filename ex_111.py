@@ -6,5 +6,4 @@ def linha():
 #Programa principal
 
 preco = float(input('Informe o preço: '))
-Print('Olá')
 moeda.amostrar(preco, 90, 5)
