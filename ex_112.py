@@ -1,9 +1,10 @@
 from utilidadesCeV import moeda
+from utilidadesCeV import dados
 
 def linha():
     print('-='*15)
 
 #Programa principal
 
-preco = float(input('Informe o preço: '))
+preco = dados.leiaDinheiro('canto')
 moeda.amostrar(preco, 90, 5)
