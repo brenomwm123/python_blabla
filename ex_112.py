@@ -6,5 +6,5 @@ def linha():
 
 #Programa principal
 
-preco = dados.leiaDinheiro('canto')
+preco = dados.leiaDinheiro()
 moeda.amostrar(preco, 90, 5)
