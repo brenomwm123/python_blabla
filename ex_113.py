@@ -13,14 +13,16 @@ def leiaInt(msg):
 def leiaFloat(msg):
     while True:
         try:
-            n = float(input('Informe um numero inteiro: '))
+            n = float(input('Informe um numero real: '))
         except(ValueError, TypeError):
-            print('ERRO, não foi digitado um numero inteiro')
+            print('ERRO, não foi digitado um numero real')
             continue
         else:
             return n
 
 
 # Programa principal
-leiaInt('Digite um número: ')
-print(f'Você digitou o número {n}')
+numint = leiaInt('Digite um número: ')
+print(f'Você digitou o número {numint}')
+numreal = leiaFloat('Digite um número: ')
+print(f'Você digitou o número {numreal}')
