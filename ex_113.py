@@ -23,6 +23,11 @@ def leiaFloat(msg):
 
 # Programa principal
 numint = leiaInt('Digite um número: ')
-print(f'Você digitou o número {numint}')
 numreal = leiaFloat('Digite um número: ')
-print(f'Você digitou o número {numreal}')
+
+print('-='*15)
+print(f'{"OS NUMEROS DIGITADOS FORAM:":^30}')
+print('-='*15)
+
+print(f'NUMERO REAL: {numreal}')
+print(f'NUMERO INTEIRO: {numint}')
