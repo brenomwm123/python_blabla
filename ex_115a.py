@@ -1,7 +1,6 @@
 from time import sleep
 
-while True:
-    try:
+def menu():
         print('-'*30)
         print(f'{"MENU":^30}')
         print('-'*30)
@@ -10,33 +9,43 @@ while True:
         print('2 - Cadastrar nova pessoa')
         print('3 - Sair do sistema')
         print('-'*30)
-        
+
+while True:
+    try:
+        menu()
         opc = int(input('Informe sua opção: '))
         
-    except:
-        print('ERRADO')
-        print('-'*30)
+    except ValueError:
+        print('Opção invalida, informe um numero inteiro')
         continue
+
+        
     else:
-        if opc == 1:
+        if opc not in (1, 2, 3):
+            print('Opção informada invalida\nPor favor digite 1, 2 ou 3')
+            continue
+        
+        elif opc == 1:
             sleep(1)
             print('-'*30)
             print(f'{"VOCE SELECIONOU : Ver pessoas cadastradas":^30}')
             sleep(2)
             print('\n')
 
-        if opc == 2:
+        elif opc == 2:
             sleep(1)
             print('-'*30)
             print(f'{"VOCE SELECIONOU: Cadastrar nova pessoa":^30}')
             sleep(2)
             print('\n')
 
-        if opc == 3:
+        elif opc == 3:
             sleep(1)
             print('-'*30)
             print(f'{"VOCE SELECIONOU: Sair do sistema":^30}')
             sleep(2)
+            print('Até mais :)')
+            sleep(0.7)
             print('\n')
             break    
 
