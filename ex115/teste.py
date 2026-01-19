@@ -1,4 +1,4 @@
 from lib.interface import *
 
-cabecalho('Testando 123')
 
+menu(['opc1', 'opc2', 'opc3'])
