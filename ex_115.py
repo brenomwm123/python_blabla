@@ -10,7 +10,6 @@ while True:
         print('2 - Cadastrar nova pessoa')
         print('3 - Sair do sistema')
         print('-'*30)
-        print('\n')
         
         opc = int(input('Informe sua opção: '))
         
