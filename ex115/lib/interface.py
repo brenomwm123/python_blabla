@@ -1,3 +1,13 @@
+def leiaInt(msg):
+    while True:
+        try:
+            n = int(input('Informe um numero inteiro: '))
+        except(ValueError, TypeError):
+            print('ERRO, não foi digitado um numero inteiro')
+            continue
+        else:
+            return n
+
 def linha(tam = 42):
     return '-' * tam
 
@@ -13,3 +23,4 @@ def menu(lista):
         print(f'{c} - {item}')
         c += 1
     print(linha())
+    opc = leiaInt('Sua opção: ')
