@@ -9,7 +9,6 @@ def leiaInt(msg):
         else:
             return n
 
-
 def leiaFloat(msg):
     while True:
         try:
