@@ -24,3 +24,4 @@ def menu(lista):
         c += 1
     print(linha())
     opc = leiaInt('Sua opção: ')
+    return opc
