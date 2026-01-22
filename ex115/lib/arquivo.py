@@ -9,6 +9,7 @@ def arquivoExiste(nome):
     else:
         return True
 
+
 def criarArquivo(nome):
     try:
         a = open(nome, 'wt+')
@@ -17,6 +18,7 @@ def criarArquivo(nome):
         print('Houve um erro na criação do arquivo')
     else:
         print(f'Arquivo {nome} criado com sucesso !')
+ 
         
 def lerArquivo(nome):
     try:
@@ -26,3 +28,18 @@ def lerArquivo(nome):
     else:
         cabecalho('PESSOAS CADASTRADAS')
         print(a.read())
+    finally:
+        a.close()
+        
+def cadastrar(arq, nome='Anonimo', idade=0):
+    try:
+        a = open(arq, 'at')
+    except:
+        print('Houve um erro na abertura do arquivo')
+    else:
+        try:
+            a.write(f'{nome};{idade}\n')
+        except:
+            print('Houve um erro rpa escreve')
+        else:
+            print(f'Houve um novo registro de {nome} adicionado')
