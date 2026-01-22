@@ -15,7 +15,7 @@ while True:
     elif resposta == 1:
         #Opção de listar pessoas cadastradas             
         cabecalho('VOCE SELECIONOU : Ver pessoas cadastradas')
-        lerArquivo(nome)
+        lerArquivo(arq)
         sleep(1)
     elif resposta == 2:                        
         cabecalho('"VOCE SELECIONOU: Cadastrar nova pessoa"')

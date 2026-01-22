@@ -25,4 +25,4 @@ def lerArquivo(nome):
         print('Erro ao ler arquivo')
     else:
         cabecalho('PESSOAS CADASTRADAS')
-        print(a.readlines())
+        print(a.read())
