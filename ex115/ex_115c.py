@@ -5,7 +5,9 @@ from lib.arquivo import *
 arq = 'cursoemvideo.txt'
 
 if arquivoExiste(arq):
-    
+    print('Arquivo encontrado')
+else:
+    print('Arquivo nao encontrado')    
 
 while True:
     resposta = menu(['Ver pessoas cadastradas', 'Cadastrar nova pessoa', 'Sair do sistema'])
