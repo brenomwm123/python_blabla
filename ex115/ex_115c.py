@@ -1,6 +1,11 @@
 from time import sleep
 from lib.interface import *
+from lib.arquivo import *
 
+arq = 'cursoemvideo.txt'
+
+if arquivoExiste(arq):
+    
 
 while True:
     resposta = menu(['Ver pessoas cadastradas', 'Cadastrar nova pessoa', 'Sair do sistema'])
