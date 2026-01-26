@@ -27,7 +27,9 @@ def lerArquivo(nome):
         print('Erro ao ler arquivo')
     else:
         cabecalho('PESSOAS CADASTRADAS')
-        print(a.read())
+        for linha in a:
+            dado = linha.split(';')
+            print(f'{dado[0]}{dado[1]}')
     finally:
         a.close()
         
