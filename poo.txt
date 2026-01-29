@@ -1,0 +1,23 @@
+objeto concreto
+sapato
+
++cor = 'azul'
++tamanho = '41'
++marca = 'nike'
++material = 'tecido'
+-----------------
++calçar()
++amarrarCadarço()
++limpar()
+
+objeto abstrato
+locação
+
++endereco = 'rua aguinaldo ferreira barbosa'
++metodoPagamento = 'pix'
++codCliente = '3452'
++objetoLocado = 'caçamba'
+-----------------
++cancelar()
++modificarLocação()
++encerrar()
