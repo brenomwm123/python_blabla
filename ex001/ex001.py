@@ -3,8 +3,7 @@ class Gafanhoto:
     def __init__(self): #Metodo construtor
         #Atributos de instancia
         self.nome = ""
-        self.idade = 0
-        
+        self.idade = 0        
     #Metodos de instancia
     def aniversario(self):
         self.idade = self.idade + 1
